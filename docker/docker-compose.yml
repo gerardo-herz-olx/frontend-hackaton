@@ -17,3 +17,8 @@ services:
     image: mongo
     ports:
       - 27017
+    volumes:
+      - data-db:/data/db
+volumes:
+  data-db:
+    driver: local
