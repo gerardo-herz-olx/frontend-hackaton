@@ -36,7 +36,8 @@
             margin: 20px 0 10px;
         }
 
-        input {
+        input,
+        select {
             display: block;
         }
 
@@ -64,6 +65,12 @@
     <form action="/result" method="POST" enctype="multipart/form-data">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" />
+
+        <label for="challenge">Challenge</label>
+        <select name="challenge" id="challenge">
+            <option value="nlp">NLP</option>
+            <option value="image">Image</option>
+        </select>
 
         <label for="code">Code (.zip)</label>
         <input type="file" name="code" id="code" />

@@ -46,6 +46,7 @@ app.post(
       insertResult(
         {
           name: req.body.name,
+          challenge: req.body.challenge,
           code: req.files.code[0].filename,
           results: req.files.results[0].filename,
           city: "delhi"
