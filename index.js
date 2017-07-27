@@ -48,7 +48,9 @@ app.post(
           name: req.body.name,
           challenge: req.body.challenge,
           code: req.files.code[0].filename,
+          code_original_name: req.files.code[0].originalname,
           results: req.files.results[0].filename,
+          results_original_name: req.files.results[0].originalname,
           city: "delhi"
         },
         db,
