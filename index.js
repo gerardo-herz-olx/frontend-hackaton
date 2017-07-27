@@ -47,7 +47,8 @@ app.post(
         {
           name: req.body.name,
           code: req.files.code[0].filename,
-          results: req.files.results[0].filename
+          results: req.files.results[0].filename,
+          city: "delhi"
         },
         db,
         function() {
