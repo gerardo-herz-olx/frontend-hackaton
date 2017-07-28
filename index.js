@@ -51,6 +51,7 @@ app.post(
           code_original_name: req.files.code[0].originalname,
           results: req.files.results[0].filename,
           results_original_name: req.files.results[0].originalname,
+          time: Math.floor(Date.now() / 1000),
           city: "delhi"
         },
         db,
@@ -63,7 +64,7 @@ app.post(
   }
 );
 
-app.get("/result", function(req, res) {
+app.get("/submissions", function(req, res) {
   MongoClient.connect(MONGO_URL, function(err, db) {
     assert.equal(null, err);
     listResults(db, function(results) {
