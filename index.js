@@ -29,7 +29,15 @@ const listResults = function(db, callback) {
 };
 
 app.get("/", function(req, res) {
+  res.sendFile("index.htm", { root: __dirname });
+});
+
+app.get("/submit", function(req, res) {
   res.sendFile("form.htm", { root: __dirname });
+});
+
+app.get("/results", function(req, res) {
+  res.sendFile("results.htm", { root: __dirname });
 });
 
 app.post(

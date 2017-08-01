@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Send your results | Hackaton</title>
+    <title>Welcome | Hackaton</title>
     <style>
         body {
             background-color: #eee;
@@ -71,26 +71,10 @@
     <header>
         <div>OLX</div>
     </header>
-    <p>Welcome, please upload your results.</p>
-    <p>PLEASE remember to choose correct challenge</p>
-    <form action="/result" method="POST" enctype="multipart/form-data">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-
-        <label for="challenge">Challenge</label>
-        <select name="challenge" id="challenge">
-            <option value="nlp">NLP</option>
-            <option value="image">Image</option>
-        </select>
-
-        <label for="code">Code (.zip)</label>
-        <input type="file" name="code" id="code" />
-
-        <label for="results">Results (.csv)</label>
-        <input type="file" name="results" id="results" />
-
-        <button type="submit">Submit</button>
-    </form>
+    <p>Image recognition challenge <a href='xxx'>here</a>.</p>
+    <p>NLP challenge <a href='xxx'>here</a>.</p>
+    <p>Submit your solution <a href='/submit'>here</a>.</p>
+    <p>Ranking <a href='/results'>here</a>.</p>
 </body>
 
 </html>
